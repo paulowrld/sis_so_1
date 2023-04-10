@@ -56,7 +56,9 @@ int main()
             shared->esteira2++;
             shared->esteira2++;
             shared->peso_total += 2;
+            shared->peso_total += 2;
             printf("Esteira 2: %d\n", shared->esteira2);
+            a++;
             a++;
 
         }
