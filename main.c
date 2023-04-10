@@ -39,7 +39,7 @@ int main()
     shared->peso_total = 0;
     
     //Simulação
-    for (i = 1; i <= 1000; i++) 
+    for (i = 1; i <= 10000; i++) 
     {
         //1
         if (i % 1 == 0) 
