@@ -39,8 +39,11 @@ int main()
     shared->peso_total = 0;
     
     //Simulação
-    for (i = 1; i <= 10000; i++) 
+    while(1)
     {
+        i++;
+        
+        
         //1
         if (i % 1 == 0) 
         {
@@ -50,23 +53,36 @@ int main()
             a++;
         }
         
+        
+        if (a % 500 == 0) 
+        {
+            printf("Peso total que passou pelas esteiras: %d\n", shared->peso_total);
+        }
+    
+        
+        
         //2
-        if (i % 1 == 0) 
+        if (1) 
         {
             shared->esteira2++;
-            shared->esteira2++;
             shared->peso_total += 2;
-            shared->peso_total += 2;
-            printf("Esteira 2: %d\n", shared->esteira2);
-            a++;
             a++;
 
         }
         
-        //Atualiza pesoo
         if (a % 500 == 0) 
         {
             printf("Peso total que passou pelas esteiras: %d\n", shared->peso_total);
+        }
+        
+        //2
+        if (1) 
+        {
+            shared->esteira2++;
+            shared->peso_total += 2;
+            printf("Esteira 2: %d\n", shared->esteira2);
+            a++;
+
         }
         
         sleep(2);
