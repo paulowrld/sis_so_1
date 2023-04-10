@@ -45,7 +45,7 @@ int main()
         
         
         //1
-        if (i % 1 == 0) 
+        if (1) 
         {
             shared->esteira1++;
             shared->peso_total += 5;
